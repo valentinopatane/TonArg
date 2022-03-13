@@ -102,6 +102,18 @@ main{
 .form_option:focus{
     outline: none;
 }
+#form_button{
+    border: 1px solid #3FB1DA;
+    width: 100px;
+    height: 30px;
+    background-color:#3fb1da3f;
+    transition: all 0.3s;
+}
+#form_button:hover{
+    background-color: #3FB1DA;
+    border: #3fb1da3f;
+    color: #fff;
+}
 @media (max-width: 1024px){
     .contact_first{
         width: 80%;

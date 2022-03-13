@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TonArg Sitio Oficial - Calculadora</title>
+    <link rel="shortcut icon" href="../multimedia/favicon.png">
+    <!--Styles-->
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/litros.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Roboto font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <nav>
+        <div class="nav_img_div">
+            <a href="../index.html"><img src="../multimedia/tonarg-logo.png" alt="tonarg-logo"></a>
+        </div>
+        <ul class="nav_ul">
+            <li class="nav_products">
+                Productos<i class="fas fa-angle-down"></i>
+                <ul class="nav_sublist">
+                    <li><a href="prod.html">Todos los productos</a></li>
+                    <li><a href="#">Calculadora de litros</a></li>
+                </ul>
+            </li>
+            <li><a href="decora.html">Decoración</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+
+        <div class="menu_hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <div class="litros_intro">
+            <h1>Calculadora de litros</h1>
+            <p>Herramienta que permite calcular, de forma sencilla, cuántos litros de pintura se necesitan para trabajar. Elige el producto y coloca la medida de la superficie a pintar para conocer la cantidad de litros.</p>
+        </div>
+        <div class="litros_form">
+            <form>
+                <span class="elige">Elige un producto</span>
+                <select  class="inputs"id="select_product">
+                    <option selected disabled></option>
+                    <option value="Látex Exterior">Latex Exterior</option>
+                    <option value="Látex Interior">Latex Interior</option>
+                    <option value="Látex Picasso">Latex Picasso</option>
+                    <option value="Revestimiento Texturado">Revestimiento Texturado</option>
+                    <option value="Membrana Líquida">Membrana Líquida</option>
+                    <option value="Piletas y Piscinas">Piletas y Piscinas</option>
+                    <option value="Látex Satinado">Látex Satinado</option>
+                    <option value="Sellador Fijador">Sellador Fijador</option>
+                    <option value="Enduido">Enduido</option>
+                    <option value="Tropic Porcelanato">Tropic Porcelanato</option>
+                    <option value="Tropic Cerámica">Tropic Cerámica</option>
+                </select>
+                <span class="elige">Superficie a pintar</span>
+                <input class="inputs" id="superficie" type="number"placeholder="Colocar (metros2)">
+                <button type="submit" id="submit_button">Calcular</button>
+            </form>
+            <div class="result_container">
+                <div class="result">
+                    <span>Total de litros a usar de: <span id="product_name"></span></span>
+                    <div id="litros_result"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_img">
+          <img src="../multimedia/tonarg-logo-invertido.png" alt="">
+        </div>  
+    </footer>
+      
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../public/litros.js"></script>
+    <script src="../public/nav.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+main{
+    margin-top: 100px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../multimedia/225-2254624_white-room.jpg");
+    background-size: cover;
+    padding-bottom: 65px;
+}
+.litros_intro{
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.litros_intro h1{
+    font-size: 30px;
+    background-color: #3fb1da65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 76px;
+    font-family: 'Roboto', sans-serif;
+}
+.litros_intro p{
+    font-weight: 600;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 60%;
+}
+.litros_form{
+    margin-top: 40px;
+    background-color: #3FB1DA;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: max-content;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.litros_form form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+}
+.elige{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inputs{
+    width: 100%;
+    height: 40px;
+    border: none;
+    text-align: center;
+}
+.inputs:focus{
+    outline: none;
+}
+#submit_button{
+    margin-top: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    width: 100px;
+    height: 40px;
+    background-color: #1C7191;
+    border: none;
+    transition: background-color 1s;
+}
+#submit_button:hover{
+    background-color: #3FB1DA;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #1C7191;
+}
+.result_container{
+    margin-top: 20px;
+    width: 60%;
+    height: max-content;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#litros_result{
+    margin-top: 10px;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #3FB1DA;
+    background-color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+#product_name{
+    letter-spacing: 2px;
+}
+footer{
+    margin-top: 0px;
+}
+@media (max-width:768px){
+    .litros_intro h1, .litros_intro p{
+        width: 100%;
+    }
+    .litros_form{
+        width: 80%;
+    }
+}

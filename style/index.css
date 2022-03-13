@@ -32,10 +32,12 @@
     background-color:rgba(0, 0, 0, 0.3);
 }
 .frontpage_index h5{
-    color: #fff;
-    font-size: 60px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(192,227,255,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
     margin-bottom: 80px;
 }
 .frontpage_index a{

@@ -1,0 +1,115 @@
+header{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_title{
+    width: 80%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.about_title h1{
+    width: 30%;
+    height: 100%;
+    font-size: 30px;
+    background-color: #3fb1da3f;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.about_sub{
+    font-weight: 400;
+    padding-bottom: 15px;
+    color:#21a5d4;
+}
+.history{
+    width: 80%;
+}
+.history_content{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.history_content_p{
+    width: 45%;
+    text-align: justify;
+    line-height: 35px;
+    font-size: 16px;
+}
+.history_content_img{
+    width: 45%;
+    height: 100%;
+}
+.history_content_img img{
+    width: 100%;
+    height: auto;
+}
+.mision{
+    margin-top: 30px;
+    width: 80%;
+}
+.mision_content{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.mision_content_p{
+    width: 50%;
+    text-align: justify;
+    line-height: 40px;
+    font-size: 16px;
+}
+.mision_content_img{
+    width: 35%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: 1s ease-in;
+}
+.mision_content_img img{
+    width: 100%;
+    height: auto;
+}
+.mision_content:hover > .history_content_img{
+    filter: grayscale(0);
+    transition: 0.5s ease-out;
+}
+@media (max-width:1024px){
+    .about_title{
+        margin-bottom: 15px;
+    }
+    .about_title h1{
+        width: 100%;
+    }
+    .history_content{
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .history_content_p{
+        width: 100%;
+    }
+    .history_content_img{
+        width: 100%;
+    }
+    .mision_content{
+        flex-direction: column;
+    }
+    .mision_content_p{
+        width: 100%;
+    }
+}

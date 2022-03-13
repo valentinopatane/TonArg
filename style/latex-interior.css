@@ -20,9 +20,15 @@ section{
     margin-left: 40px;
     text-align: justify;
 }
+.intro_title h1{
+    color: #3FB1DA;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
 .intro_title p{
     margin-top: 20px;
     line-height: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 .intro_img{
     width: 60%;
@@ -78,6 +84,11 @@ section{
 }
 .caract_aplic p{
     line-height: 30px;
+}
+.prod_subtitulo{
+    color: #3FB1DA;
+    font-weight: 600;
+    font-size: 28px;
 }
 @media (max-width: 1024px){
     main{
