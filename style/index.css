@@ -32,6 +32,7 @@
     background-color:rgba(0, 0, 0, 0.3);
 }
 .frontpage_index h5{
+    background-color: none;
     color: #fff;
     font-size: 80px;
     font-family: 'Pacifico', cursive;
