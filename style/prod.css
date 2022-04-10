@@ -89,7 +89,7 @@ main{
 .product_img{
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 70%;
     height: 60%;
 }
 .product_img img{
