@@ -20,12 +20,9 @@ main{
     align-items: center;
 }
 .about_title h1{
-    width: 30%;
-    height: 100%;
     font-size: 30px;
+    padding: 20px 170px 20px 15px;
     background-color: #3fb1da3f;
-    display: flex;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
 }
 .about_sub{
