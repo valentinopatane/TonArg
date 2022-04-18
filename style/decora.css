@@ -23,6 +23,7 @@ header{
 main{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -123,7 +124,7 @@ main{
 .gallery_img{
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #fff;
     position: relative;
     z-index: 4;
 }
@@ -144,6 +145,9 @@ main{
 }
 .gallery_link:hover > .gallery_img > .gallery_filter{
     background-color: rgba(0, 0, 0, 0.2);
+}
+#pagination_gallery{
+    margin-top: 15px;
 }
 @media (max-width: 1024px){
     .deco_title{
@@ -202,6 +206,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: red;
     }
     .deco_gallery{
         width: 80%;
