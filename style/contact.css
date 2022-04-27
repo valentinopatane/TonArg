@@ -23,6 +23,8 @@ header{
 }
 .contact_sub{
     font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #3FB1DA;
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -36,76 +38,112 @@ main{
 .contact_first{
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 80px;
+    justify-content: space-between;
 }
+
 .info{
     width: 50%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.phone ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .phone ul li{
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    height: max-content;
+    color: #000;
+    list-style: none;
+    line-height: 40px;
+}
+.wsp{
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+.wsp a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(0, 212, 0);
+    width: max-content;
+    padding: 5px 30px 5px 30px;
+    border-radius: 25px;
+}
+.wsp a:hover{
+    color: #fff;
+    box-shadow:inset 0px 0px 0px 1px rgb(40, 153, 40);
+    background-color: rgb(33, 221, 33);
+}
+.wsp a i{
+    height: 100%;
+    padding-right: 15px;
+}
+.wsp a i img{
+    width: 24px;
+    height: 100%;
+    object-fit: contain;
+    filter:invert(1);
 }
 .schedule ul li{
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    color: #3FB1DA;
+    list-style: square;
+    line-height: 40px;
+}
+.schedule ul li span {
+    color: #000;
 }
 .map{
-    width: 50%;
-}
-.map iframe{
     width: 100%;
+    height: 400px;
+    margin-top: 15px;
 }
-.contact_form{
-    width: 80%;
+.form{
+    width: 45%;
 }
-.contact_form form{
+.form form{
     width: 100%;
-    height: 300px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "name email tel"
-    "country prov city"
-    "mes mes mes"
-    "mes mes mes";
-    grid-gap: 10px;
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#name{
-    grid-area: name;
-}
-#email{
-    grid-area: email;
-}
-#tel{
-    grid-area: tel;
-}
-#country{
-    grid-area: country;
-}
-#prov{
-    grid-area: prov;
-}
-#city{
-    grid-area: city;
-}
-#mesage{
-    grid-area: mes;
-}
+
 .form_option{
+    height: 50%;
+    width: 100%;
     border: 1px solid #3FB1DA;
     border-top: 0;
     border-left: 0;
     border-right: 0;
 }
+.form_option:hover{
+    transition: all 0.2 ease-in;
+    border: 1px outset #00bbff;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+
+}
+#country, #prov{
+    cursor: pointer;
+}
+#mesage{
+    height: 100%;
+}
 .form_option:focus{
     outline: none;
 }
 #form_button{
+    margin-top: 20px;
     border: 1px solid #3FB1DA;
     width: 100px;
     height: 30px;
@@ -114,7 +152,7 @@ main{
 }
 #form_button:hover{
     background-color: #3FB1DA;
-    border: #3fb1da3f;
+    border: 1px solid #3fb1da3f;
     color: #fff;
 }
 @media (max-width: 1024px){
@@ -127,12 +165,18 @@ main{
     .info{
         width: 100%;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
     }
     .map{
-        width: 100%;
+        width: 600px;
+        height: 300px;
     }
-    .contact_form{
-        width: 80%;
+    .form{
+        margin-top: 30px;
+        width: 100%;
     }
     .contact_form form{
         width: 100%;
@@ -160,6 +204,11 @@ main{
     .info{
         width: 100%;
         display: flex;
+    }
+    .phone ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .map{
         width: 100%;

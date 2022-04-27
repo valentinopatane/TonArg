@@ -216,17 +216,21 @@
 
 
 
-
 footer{
     margin-top: 50px;
     width: 100%;
     height: 100px;
     background-color: #2392BA;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-
+.footer_rights{
+    margin-left: 100px;
+    width: 20%;
+    font-size: 12px;
+    color: #fff;
+}
 .footer_img{
     width: 150px;
     height: 50%;
@@ -234,4 +238,57 @@ footer{
 .footer_img img{
     width: 100%;
     height: 100%;
+}
+.footer_icons{
+    font-size: 15px;
+    display: flex;
+    margin-right: 100px;
+    justify-content: space-between;
+    width: 20%;
+    color: #fff;
+}
+.footer_icons span{
+    display: flex;
+}
+.footer_icons span i img{
+    width: 20px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+@media(max-width: 1600px){
+    .footer_rights{
+        width: 20%;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .footer_icons{
+        flex-direction: column;
+        width: 20%;
+        line-height: 30px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .footer_icons span i img{
+        width: 15px;
+        margin-right: 8px;
+    }
+}
+@media(max-width: 768px){
+    .footer_rights{
+        width: 30%;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .footer_icons{
+
+        flex-direction: column;
+        width: 30%;
+        line-height: 30px;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .footer_icons span i img{
+        width: 15px;
+        margin-right: 8px;
+    }
 }

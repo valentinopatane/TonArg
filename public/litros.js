@@ -4,36 +4,36 @@ const button = document.getElementById('submit_button')
 button.addEventListener('click', (e)=>{
     e.preventDefault();
 
-    const product = $("#select_product").val();
-    const surface = $("#superficie").val();   
+    const productoSeleccionado = $("#select_product").val();
+    const superficie = $("#superficie").val();   
 
-    if(product == '' || surface==0){
+    if(productoSeleccionado == '' || superficie==0){
         alert('Ingrese datos válidos')
         $("#select_product").val("");
         $("#superficie").val("");   
     }else{
 
-        const litrosProd = [
-            {nombre:'Látex Exterior', litros:1},
-            {nombre:'Látex Interior', litros:2},
-            {nombre:'Látex Picasso', litros:3},
-            {nombre:'Revestimiento Texturado', litros:4},
-            {nombre:'Membrana Líquida', litros:1},
-            {nombre:'Piletas y Piscinas', litros:1},
-            {nombre:'Látex Satinado', litros:1},
-            {nombre:'Sellador Fijador', litros:1},
-            {nombre:'Enduido', litros:1},
-            {nombre:'Tropic Porcelanato', litros:1},
-            {nombre:'Tropic Cerámica', litros:1},
+        const productos = [
+            {nombre:'Látex Exterior', rendimiento:6},
+            {nombre:'Látex Interior', rendimiento:6},
+            {nombre:'Látex Picasso', rendimiento:5},
+            {nombre:'Revestimiento Texturado', litros:0.5},
+            {nombre:'Membrana Líquida', rendimiento:1.5},
+            {nombre:'Piletas y Piscinas', rendimiento:5},
+            {nombre:'Látex Satinado', rendimiento:6},
+            {nombre:'Sellador Fijador', rendimiento:10},
+            {nombre:'Enduido', rendimiento:3},
+            {nombre:'Tropic Porcelanato', rendimiento:1},
+            {nombre:'Tropic Cerámica', rendimiento:1},
         ]
 
 
-        const obj = litrosProd.find(litros => litros.nombre === product)
+        const obj = productos.find(producto => producto.nombre === productoSeleccionado)
 
-        let result = Math.round(obj.litros * surface)
+        let result = Math.round(superficie / obj.rendimiento)
 
         const nameDOM = `
-        <b>${product}</b> en <b>${surface}</b> (m2)
+        <b>${productoSeleccionado}</b> en <b>${superficie}</b> (m2)
          `
 
         const resultDOM = `
