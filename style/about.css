@@ -92,6 +92,10 @@ main{
     }
     .about_title h1{
         width: 100%;
+        padding: 20px 100px 20px 15px;
+    }
+    .about_sub{
+        margin-top: 30px;
     }
     .history_content{
         margin-top: 10px;

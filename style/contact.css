@@ -195,6 +195,9 @@ main{
     }
 }
 @media(max-width: 768px){
+    .contact_title h1{
+        padding: 10px 50px 10px 10px;
+    }
     .contact_first{
         width: 80%;
         display: flex;
@@ -209,6 +212,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-right: 25px;
     }
     .map{
         width: 100%;
