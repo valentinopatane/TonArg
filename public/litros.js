@@ -23,8 +23,6 @@ button.addEventListener('click', (e)=>{
             {nombre:'Látex Satinado', rendimiento:6},
             {nombre:'Sellador Fijador', rendimiento:10},
             {nombre:'Enduido', rendimiento:3},
-            {nombre:'Tropic Porcelanato', rendimiento:1},
-            {nombre:'Tropic Cerámica', rendimiento:1},
         ]
 
 
