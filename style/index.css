@@ -293,7 +293,7 @@
 .child_text h5{
     width: 80%;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
 }
 .child_button{
     position: absolute;
@@ -365,6 +365,53 @@
     background-color: #cceffc;
     color: #3FB1DA;
     border: 1px solid #3FB1DA ;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+.float:hover{
+    background-color: rgb(245, 255, 245);
+}
+.float:hover >  i{
+    filter: invert(57%) sepia(50%) saturate(674%) hue-rotate(90deg) brightness(105%) contrast(90%);
+    
+}
+.float i{
+    filter: invert(1);
+    width: 60%;
+    height: 60%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+.float i img{
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: contain;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.my-float{
+	margin-top:16px;
 }
 
 @media (max-width: 1024px){

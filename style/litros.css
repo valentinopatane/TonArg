@@ -123,4 +123,9 @@ footer{
     .litros_form{
         width: 80%;
     }
+    main{
+        padding-bottom: 0;
+        background: rgb(255, 254, 248);
+        margin-bottom: 150px;
+    }
 }
