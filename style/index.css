@@ -18,7 +18,6 @@
 /*Slogan y botón presentación*/
 .frontpage_index{
     display: flex;
-    width: max-content;
     flex-direction: column;
     position: absolute;
     top: 0;
@@ -528,6 +527,10 @@
 }
 @media (max-width: 768px) {
     /*Title and button index*/
+    .frontpage_index{
+        top:-80px;
+        height: 100vh;
+    }
     .frontpage_index h5{
         font-size: 40px;
     }
