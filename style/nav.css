@@ -252,6 +252,11 @@ footer{
     color: #fff;
     font-size: 15px;
     display: flex;
+    cursor: pointer;
+}
+.footer_icons a:hover{
+    color: #fff;
+    text-decoration: underline;
 }
 .footer_icons a i img{
     width: 20px;
@@ -300,7 +305,7 @@ footer{
         font-size: 10px;
         margin-right: 10px;
     }
-    .footer_icons span i img{
+    .footer_icons a i img{
         width: 15px;
         margin-right: 8px;
     }
