@@ -247,10 +247,13 @@ footer{
     width: 20%;
     color: #fff;
 }
-.footer_icons span{
+.footer_icons a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
     display: flex;
 }
-.footer_icons span i img{
+.footer_icons a i img{
     width: 20px;
     margin-right: 10px;
     filter: invert(1);
@@ -268,7 +271,7 @@ footer{
         font-size: 14px;
         margin-right: 10px;
     }
-    .footer_icons span i img{
+    .footer_icons a i img{
         width: 15px;
         margin-right: 8px;
     }

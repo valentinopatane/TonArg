@@ -340,7 +340,8 @@
 }
 
 .fourth_img{
-    width: 50%;
+    transform: scale(0.8);
+    width: 45%;
     height: 400px;
 
 }
